@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,23 +14,33 @@
     <header class="title">
         <h1>Calculando IMC</h1>
     </header>
-    <main>
-        <section class="container_input">
+    <main class="container_input ">
+        <section>
             <div class="weigth">
                 <label for="input_weigth">Peso (Kg):</br></label>
-                <input id="input_weigth" type="number" step="0.1" placeholder="Qual o seu peso?">
+                <input class="input_weight" id="input_weigth" type="number" step="0.1" placeholder="Qual o seu peso ?">
             </div>
 
             <div class="heigth">
                 <label for="input_heigth">Altura (m):</br></label>
-                <input id="input_heigth" type="number" step="0.01" placeholder="Qual a sua altura?">
+                <input class="input_height" id="input_heigth" type="number" step="0.01"
+                    placeholder="Qual a sua altura ?">
                 <button id="btnCalculator" class="button_calculator">Calcular IMC</button>
             </div>
-            <div id="paragraph_result"><p> O ICM desses dados é: <strong id="imc_result"></strong></p></div>
+            <div id="paragraph_result">
+                <p> O ICM desses dados é : <strong id="imc_result"></strong></p>
+            </div>
 
-            <div id="paragraph_result"><p>Este valor considera que você está na faixa:<strong id="imc_result2"></strong></p></div>
+            <div id="paragraph_result">
+                <p>Este valor considera que você está na faixa :<strong id="imc_result2"></strong></p>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <p>Calculadora IMC</p>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 
